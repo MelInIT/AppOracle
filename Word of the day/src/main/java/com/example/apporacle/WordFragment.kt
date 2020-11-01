@@ -22,7 +22,7 @@ class WordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         word.text = resources.openRawResource(R.raw.words)
             .bufferedReader()
-            .use { it.readLines() }
+            .use { it.readLines() } //new commit in feature
             .random()
 
 
