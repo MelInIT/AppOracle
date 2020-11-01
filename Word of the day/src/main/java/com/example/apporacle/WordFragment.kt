@@ -18,7 +18,7 @@ class WordFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_word, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {      // 2new commit in master
         word.text = resources.openRawResource(R.raw.words)
             .bufferedReader()
             .use { it.readLines() }
