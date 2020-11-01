@@ -22,7 +22,7 @@ class WordFragment : Fragment() {
         word.text = resources.openRawResource(R.raw.words)
             .bufferedReader()
             .use { it.readLines() }
-            .random()
+            .random()       //new master commit
 
 
     }
