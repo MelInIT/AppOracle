@@ -1,0 +1,2 @@
+include ':Word of the day'
+rootProject.name = "AppOracle"
