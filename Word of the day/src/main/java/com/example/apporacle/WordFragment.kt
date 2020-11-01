@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.fragment_word.*
 
 class WordFragment : Fragment() {
 
+    // comment
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -17,12 +18,12 @@ class WordFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_word, container, false)
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {      // 2new commit in master
+//asdasdasd
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         word.text = resources.openRawResource(R.raw.words)
             .bufferedReader()
-            .use { it.readLines() }
-            .random()       //new master commit
+            .use { it.readLines() } //new commit in feature
+            .random()
 
 
     }
